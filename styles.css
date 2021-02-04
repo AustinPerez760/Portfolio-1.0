@@ -61,7 +61,6 @@ textarea {
 
 .head-wrapper {
     display: grid;
-    border: 2px dashed red;
     min-height: 20em;
     text-align: center;
     align-content: center;
@@ -71,6 +70,7 @@ textarea {
 .intro-wrapper {
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
     -webkit-box-shadow: 12px 2px 25px 2px rgba(0, 0, 0, 0.77);
     box-shadow: 12px 2px 25px 2px rgba(0, 0, 0, 0.77);
 
@@ -83,17 +83,59 @@ textarea {
 
 .nav-wrapper {
     grid-area: nav-wrapper;
-    border: 1px dashed red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--borderColor);
+    background-color: var(--mainColor);
+    border-radius: 5px 5px 0 0;
+
+}
+
+#navigation {
+    margin: 0;
+    padding: 10px;
+}
+
+#navigation li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.dots-wrapper {
+    display: flex;
+    padding: 10px;
+}
+
+.browser-dot {
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+#dot-1 {
+    background-color: rgb(253, 69, 69);
+}
+
+#dot-2 {
+    background-color: rgb(243, 208, 53);
+}
+
+#dot-3 {
+    background-color: rgb(84, 138, 84)
 }
 
 .left-column {
     grid-area: left-column;
-    border: 1px dashed red;
+
 }
 
 .right-column {
     grid-area: right-column;
-    border: 1px dashed red;
+
 }
 
 @media screen and (max-width:1200px) {
