@@ -1,19 +1,21 @@
 :root {
-    --mainColor: lightgrey;
-    --secondaryColor: white;
+  --mainColor: lightgrey;
+  --secondaryColor: white;
 
-    --borderColor: cornflowerblue;
+  --borderColor: cornflowerblue;
 
-    --mainText: black;
-    --secondaryText: slategrey;
+  --mainText: black;
+  --secondaryText: slategrey;
 
+  --themeDotBorder: black;
+  --previewBg: rgb(145, 175, 231);
+  --previewShadow: cornflowerblue;
 }
-
 
 html,
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -23,13 +25,9 @@ h4,
 h5,
 h6,
 strong {
-    color: var(--mainText);
-    font-family: 'Play', sans-serif;
+  color: var(--mainText);
+  font-family: "Play", sans-serif;
 }
-
-
-
-
 
 p,
 li,
@@ -37,142 +35,255 @@ span,
 label,
 input,
 textarea {
-    color: var(--secondaryText);
-    font-family: 'Cuprum', sans-serif;
+  color: var(--secondaryText);
+  font-family: "Cuprum", sans-serif;
 }
 
 .sec1 {
-    background-color: var(--mainColor);
-    border-bottom: 1px solid var(--borderColor);
-    overflow: auto;
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
 }
 
 .sec2 {
-    background-color: var(--secondaryColor);
-    border-bottom: 1px solid var(--borderColor);
-    overflow: auto
+  background-color: var(--secondaryColor);
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
 }
 
 .main-container {
-    width: 1200px;
-    margin: 0 auto;
-
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .head-wrapper {
-    display: grid;
-    min-height: 20em;
-    text-align: center;
-    align-content: center;
-    min-height: 10em;
+  display: grid;
+  min-height: 20em;
+  text-align: center;
+  align-content: center;
+  min-height: 10em;
 }
 
 .intro-wrapper {
-    background-color: var(--secondaryColor);
-    border: 1px solid var(--borderColor);
-    border-radius: 5px 5px 0 0;
-    -webkit-box-shadow: 12px 2px 25px 2px rgba(0, 0, 0, 0.77);
-    box-shadow: 12px 2px 25px 2px rgba(0, 0, 0, 0.77);
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 5px 5px 0 0;
+  -webkit-box-shadow: 12px 2px 25px 2px rgba(0, 0, 0, 0.77);
+  box-shadow: 12px 2px 25px 2px rgba(0, 0, 0, 0.77);
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3em 30em;
-    grid-template-areas: 'nav-wrapper nav-wrapper'
-        'left-column right-column';
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "nav-wrapper nav-wrapper"
+    "left-column right-column";
 }
 
 .nav-wrapper {
-    grid-area: nav-wrapper;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--borderColor);
-    background-color: var(--mainColor);
-    border-radius: 5px 5px 0 0;
-
+  grid-area: nav-wrapper;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--borderColor);
+  background-color: var(--mainColor);
+  border-radius: 5px 5px 0 0;
 }
 
 #navigation {
-    margin: 0;
-    padding: 10px;
+  margin: 0;
+  padding: 10px;
 }
 
 #navigation li {
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .dots-wrapper {
-    display: flex;
-    padding: 10px;
+  display: flex;
+  padding: 10px;
 }
 
 .browser-dot {
-    background-color: black;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    margin: 5px;
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
 }
 
 #dot-1 {
-    background-color: rgb(253, 69, 69);
+  background-color: rgb(253, 69, 69);
 }
 
 #dot-2 {
-    background-color: rgb(243, 208, 53);
+  background-color: rgb(243, 208, 53);
 }
 
 #dot-3 {
-    background-color: rgb(84, 138, 84)
+  background-color: rgb(84, 138, 84);
+}
+
+#profile-pic {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border: 2px solid var var(--borderColor);
+}
+
+#theme-options-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.theme-dots {
+  background-color: black;
+  border: 2px solid var(--themeDotBorder);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 5px;
+
+  cursor: pointer;
+}
+
+.theme-dots:hover {
+  border-width: 5px;
+}
+
+#light-mode {
+  background-color: white;
+}
+
+#dark-mode {
+  background-color: black;
+}
+
+#abyss-mode {
+  background-color: rgb(26, 6, 99);
+}
+
+#elysium-mode {
+  background-color: rgb(100, 175, 138);
+}
+
+#setting-note {
+  font-size: italic;
+  font-style: italic;
+  text-align: center;
 }
 
 .left-column {
-    grid-area: left-column;
-
+  grid-area: left-column;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .right-column {
-    grid-area: right-column;
-
+  grid-area: right-column;
+  display: grid;
+  align-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-@media screen and (max-width:1200px) {
-    .main-container {
-        width: 95%;
-    }
+#preview-shadow {
+  background-color: var(--previewShadow);
+  width: 300px;
+  height: 150px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+#preview {
+  width: 300px;
+  border: 1.5px solid cornflowerblue;
+  opacity: 0.9;
+  background-color: var(--previewBg);
+  padding: 15px;
+  position: relative;
+}
+
+.corner {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1.5px solid cornflowerblue;
+  background-color: white;
+  position: absolute;
+}
+
+#corner-tl {
+  top: -5px;
+  left: -5px;
+}
+
+#corner-tr {
+  top: -5px;
+  right: -5px;
+}
+
+#corner-br {
+  bottom: -5px;
+  right: -5px;
+}
+
+#corner-bl {
+  bottom: -5px;
+  left: -5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav-wrapper"
+      "left-column"
+      "right-column";
+  }
+  .right-column {
+    justify-content: center;
+  }
 }
 
 h1 {
-    font-size: 56px;
+  font-size: 56px;
 }
 
 h2 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 h3 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 h4 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 h5 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 h6 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 a {
-    text-decoration: none;
-    color: cornflowerblue;
+  text-decoration: none;
+  color: cornflowerblue;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
