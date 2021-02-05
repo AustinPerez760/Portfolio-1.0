@@ -5,7 +5,8 @@
   --borderColor: cornflowerblue;
 
   --mainText: black;
-  --secondaryText: slategrey;
+  --secondaryText: black;
+
 
   --themeDotBorder: black;
   --previewBg: rgb(145, 175, 231);
@@ -121,7 +122,7 @@ textarea {
 }
 
 #dot-3 {
-  background-color: rgb(84, 138, 84);
+  background-color: rgb(80, 209, 80);
 }
 
 #profile-pic {
@@ -236,6 +237,30 @@ textarea {
   left: -5px;
 }
 
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 100px;
+}
+
+#skills {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--previewShadow);
+}
+
+#social-img {
+  width: 100%;
+}
+
+.social {
+  display: grid;
+  align-content: center;
+  text-align: center
+}
+
 @media screen and (max-width: 1200px) {
   .main-container {
     width: 95%;
@@ -250,6 +275,7 @@ textarea {
       "left-column"
       "right-column";
   }
+
   .right-column {
     justify-content: center;
   }
