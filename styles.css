@@ -11,12 +11,18 @@
   --themeDotBorder: black;
   --previewBg: rgb(145, 175, 231);
   --previewShadow: cornflowerblue;
+
+  --btnColor: black;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
+}
+
+body * {
+  transition: 0.3s;
 }
 
 h1,
@@ -294,6 +300,48 @@ textarea {
 
 .post {
   border: 1px solid var(--borderColor);
+}
+
+#contact-form {
+  display: black;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid var(--borderColor);
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--mainColor);
+  margin-bottom: 50px;
+
+}
+
+#contact-form label {
+  line-height: 2.7em;
+
+}
+
+#contact-form textarea {
+  min-height: 100px;
+  font-size: 14px;
+}
+
+.input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--secondaryColor);
+  border-radius: 5px;
+  border: 1px solid var(--borderColor);
+  font-size: 14px;
+}
+
+#submit-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: var(--btnColor);
+  border: none;
 }
 
 @media screen and (max-width: 1200px) {
