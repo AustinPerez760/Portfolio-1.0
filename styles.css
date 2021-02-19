@@ -7,7 +7,6 @@
   --mainText: black;
   --secondaryText: black;
 
-
   --themeDotBorder: black;
   --previewBg: rgb(145, 175, 231);
   --previewShadow: cornflowerblue;
@@ -141,6 +140,11 @@ textarea {
   border: 2px solid var var(--borderColor);
 }
 
+#social-img {
+  /* height: 200px;
+  width: 200px; */
+}
+
 #theme-options-wrapper {
   display: flex;
   justify-content: center;
@@ -265,7 +269,7 @@ textarea {
 .social {
   display: grid;
   align-content: center;
-  text-align: center
+  text-align: center;
 }
 
 .post-wrapper {
@@ -274,7 +278,6 @@ textarea {
   gap: 20px;
   justify-content: center;
   padding-bottom: 50px;
-
 }
 
 .thumbnail {
@@ -312,12 +315,10 @@ textarea {
   border-radius: 5px;
   background-color: var(--mainColor);
   margin-bottom: 50px;
-
 }
 
 #contact-form label {
   line-height: 2.7em;
-
 }
 
 #contact-form textarea {
