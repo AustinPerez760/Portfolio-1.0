@@ -140,11 +140,6 @@ textarea {
   border: 2px solid var var(--borderColor);
 }
 
-#social-img {
-  /* height: 200px;
-  width: 200px; */
-}
-
 #theme-options-wrapper {
   display: flex;
   justify-content: center;
