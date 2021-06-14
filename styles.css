@@ -340,6 +340,9 @@ textarea {
   background-color: var(--btnColor);
   border: none;
 }
+.learn {
+  float: right;
+}
 
 @media screen and (max-width: 1200px) {
   .main-container {
